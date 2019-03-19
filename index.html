@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main-css.css">
+</head>
+
+<body>
+    <!--MAIN BANNER-->
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1>Verify Password Strength</h1>
+        </div>
+    </div>
+    <!--MAIN CONTENT-->
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-md-6 mb-md-4">
+                    <!--USERNAME-->
+                    <div class="input-group">
+                        <label for="username" class="mr-md-3">Username:</label>
+                        <input type="email" class="form-control" id="username" required />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!--PASSWORD-->
+                    <div class="input-group">
+                        <label for="pwd" class="mr-md-3">Password:</label>
+                        <input type="password" class="form-control" id="pwd" required />
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="message"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-outline-primary w-25" id="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main-js.js"></script>
+</body></html>
