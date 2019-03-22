@@ -1,38 +1,33 @@
-$("#pwd").keyup(function () {
-    var strength = 1;
-
-    /*length 5 characters or more*/
-    if (this.value.length >= 5) {
-        strength++;
-    }
-
-    /*contains lowercase characters*/
-    if (this.value.match(/[a-z]+/)) {
-        strength++;
-    }
-
-    /*contains digits*/
-    if (this.value.match(/[0-9]+/)) {
-        strength++;
-    }
-
-    /*contains uppercase characters*/
-    if (this.value.match(/[A-Z]+/)) {
-        strength++;
-    }
-
-    if (strength >= 5) {
-        $('#message').addClass('glyphicon glyphicon-ok');
-        $('#message').text('Strong');
-    } else if (strength >= 0) {
-        $('#message').addClass('glyphicon glyphicon-remove');
-        $('#message').text('Week');
-    }
-
-});
-
-
 $(document).ready(function () {
+    $("#pwd").keyup(function () {
+        var strength = 1;
+
+        if (this.value.length >= 5) {
+            strength++;
+        }
+
+        if (this.value.match(/[a-z]+/)) {
+            strength++;
+        }
+
+        if (this.value.match(/[0-9]+/)) {
+            strength++;
+        }
+
+        if (this.value.match(/[A-Z]+/)) {
+            strength++;
+        }
+
+        if (strength >= 5) {
+            $('#message').addClass('glyphicon glyphicon-ok');
+            $('#message').text('Strong');
+        } else if (strength >= 0) {
+            $('#message').addClass('glyphicon glyphicon-remove');
+            $('#message').text('Week');
+        }
+
+    });
+
     $("#submit").click(function () {
         var username = $("#username").val();
         var password = $("#pwd").val();
@@ -52,6 +47,3 @@ $(document).ready(function () {
     });
 
 });
-
-
-/*glyphicon glyphicon-remove*/
