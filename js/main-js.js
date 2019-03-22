@@ -34,7 +34,7 @@ $(document).ready(function () {
         var message = $("#message").text();
 
         if (message == "Strong") {
-            alert("Username: " + username + " and Password: " + password);
+            alert("succesful");
         } else if (message == "Week") {
             $("#pwd").removeClass(".btn btn-outline-primary");
             $("#pwd").addClass(".btn btn-outline-danger");
